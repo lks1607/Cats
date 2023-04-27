@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title> 고양이 잡지 </title>
+    <script src="./script/jquery-1.12.4.min.js"></script>
+    <script src="./script/jquery.innerfade.js"></script>
+    <script>
+        $(function(){
+            $(".inner-fade").innerfade({
+                animationtype:"fade",
+                timeout:2000
+            })
+        });
+    </script>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="slide">
+            <ul class="inner-fade">
+                <li>
+                    <a href="#">
+                        <img src="./images/1.svg" alt="고양이 사진1">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/2.svg" alt="고양이 사진2">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/3.svg" alt="고양이 사진3">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/4.svg" alt="고양이 사진4">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text">
+            <a href="./images/cat.pdf" target="_blank">
+                <p>미리보기</p>
+            </a>
+            <a href="./images/catmagazine.zip" target="_blank">
+                <p>다운받기</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
